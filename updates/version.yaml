@@ -1,0 +1,4 @@
+1.0.1: First version of bniva
+1.0.2:
+    - Add bni_va column to users table
+    - add_bni_va_column_to_users_table.php

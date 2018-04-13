@@ -1,0 +1,54 @@
+# ===================================
+#  Gateway Field Definitions
+# ===================================
+
+fields:
+    test_mode:
+        label: Sandbox mode
+        type: switch
+        default: true
+        span: left
+        tab: Configuration
+        comment: Use the Sandbox Test Environment to try out payments using this gateway.
+
+    payment_logo:
+        label: Logo
+        type: mediafinder
+        mode: image
+        span: right
+        tab: Configuration
+
+    client_id:
+        label: Client ID
+        required: true
+        span: left
+        tab: Configuration
+
+    secret_key:
+        label: Secret Key
+        required: true
+        span: left
+        tab: Configuration
+
+    expiry_duration:
+        label: Expiry time (Duration)
+        type: number
+        span: right
+        tab: Configuration
+
+    expiry_unit:
+        label: Expiry time (Unit)
+        type: dropdown
+        options:
+            day: Day(s)
+            hour: Hour(s)
+            minute: Minute(s)
+        span: right
+        tab: Configuration
+
+    invoice_paid_status:
+        label: Invoice paid status
+        comment: Select status to assign the invoice in case of successful payment.
+        tab: Configuration
+        span: auto
+        type: dropdown
